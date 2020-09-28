@@ -1,0 +1,19 @@
+{
+    "name": "CsVikram/HelloAdmin",
+    "description": "CS Vikram Hello Admin Module",
+    "authors": [
+        {
+            "email": "cs.vikram44@gmail.com",
+            "name": "Vikram Kumar"
+        }
+    ],
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "CsVikram\\HelloAdmin\\": ""
+        }
+    }
+}
