@@ -7,6 +7,8 @@
 
  - Unzip the theme zip file in `app/code/CsVikram/HelloAdmin`
  - Apply database updates by running `php bin/magento setup:upgrade`
+ - Disable module by running `php bin/magento module:disable CsVikram_HelloAdmin`
+ - Enable module by running `php bin/magento module:enable CsVikram_HelloAdmin`
  - Flush the cache by running `php bin/magento cache:flush`
 
 ### Type 2: Composer
