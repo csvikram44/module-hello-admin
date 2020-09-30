@@ -2,5 +2,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
         <add id="CsVikram_HelloAdmin::helloadmin" title="Hello Admin" module="CsVikram_HelloAdmin" sortOrder="10" resource="CsVikram_HelloAdmin::helloadmin"/>
+            <add id="CsVikram_HelloAdmin::topcontent" title="Top Content" module="CsVikram_HelloAdmin" sortOrder="10" resource="CsVikram_HelloAdmin::topcontent" parent="CsVikram_HelloAdmin::helloadmin"/>
+            <add id="CsVikram_HelloAdmin::bottomcontent" title="Bottom Content" module="CsVikram_HelloAdmin" sortOrder="10" resource="CsVikram_HelloAdmin::content" parent="CsVikram_HelloAdmin::helloadmin"/>
+                <add id="CsVikram_HelloAdmin::clickme" title="Click me" action="helloadmin/helloadmin/index" module="CsVikram_HelloAdmin" sortOrder="10" resource="CsVikram_HelloAdmin::clickme" parent="CsVikram_HelloAdmin::topcontent"/>
     </menu>
 </config>
